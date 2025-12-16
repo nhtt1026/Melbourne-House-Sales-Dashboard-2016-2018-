@@ -14,14 +14,6 @@ Dataset source: [Melbourne Housing Market (Kaggle)](https://www.kaggle.com/datas
 
 Dataset fields:
 - Suburb, RegionName, Price (AUD - $000s), Date sold, Rooms (bedrooms), Distance (km to CBD), Postcode, LandSize (sqm), MarketValueIndex
-
----
-
-## Business Questions (Buyer Advocacy + Investor Lens):
-1. How did average sale prices move across 2016–2018 (trend + seasonality)?
-2. Where are price premiums concentrated (Region/Suburb)?
-3. What property profiles dominate sales volume (Rooms, Land Size)?
-4. Which Region × Rooms combinations show stronger “value opportunity” signals vs price?
    
 ---
 
@@ -102,32 +94,7 @@ Dataset fields:
 
 ---
 
-## Key Insights (Fill with your observed outcomes)
-From the dashboard views (after checking with filters):
-1. **Trend:** Average sales prices were [stable/rising/volatile] across 2016–2018 with [notable dip/spike] around [month/year].
-2. **Location premium:** Higher prices cluster in [regions/suburbs], while [regions] remain relatively affordable after controlling for Distance/Rooms.
-3. **Demand profile:** Most sales concentrate in [3–4] bedroom homes and [~400–700 sqm] lots (indicative of family demand).
-4. **Value opportunities:** Stronger Value Scores appear in [Region × Rooms] combinations, which may be attractive for investor screening (validate with sales counts).
-
----
-
-## Recommendations (PropertyExperts Buyer Advocacy)
-1. Use the **Value Opportunity Heatmap** to create an initial investor shortlist, then validate with transaction volume (avoid thin-sample cells).
-2. Use **Distance-from-CBD** + **Rooms** to differentiate:
-   - “Lifestyle premium” zones (inner/near-CBD)
-   - “Yield/value” zones (mid/outer ring, family stock)
-3. Treat extreme price / land size observations as a separate “development site” lens; do not mix with typical residential buyer guidance.
-
----
-
-## Assumptions & Limitations
-- Price unit interpretation (AUD vs AUD $000s) must be explicitly stated.
+## Limitations:
 - MarketValueIndex methodology is not provided; Value Score is used as a **screening signal**, not a formal valuation model.
-- Cells with low count in heatmaps can be unstable; add a minimum-sales-count rule if extending.
 
 ---
-
-## Files in This Repo
-- `/assets` screenshots used in README
-- `/tableau` packaged workbook + build notes
-- `/docs` business context and data dictionary
