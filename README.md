@@ -95,6 +95,10 @@ Dataset fields:
 ---
 
 ## Limitations:
-- MarketValueIndex methodology is not provided; Value Score is used as a **screening signal**, not a formal valuation model.
+- **Period**: Insights reflect the 2016–2018 market only and may not generalise to later cycles.
+- **Averages can mislead**: Prices are right-skewed with outliers, so averages may not represent typical outcomes.
+- **Niche segments**: Some Region & Rooms combinations (especially high room counts) are niche and can over-signal.
+- *MarketValueIndex* methodology is not provided so *Value Score* is used as a **screening signal**, not a formal valuation model.
+- **Missing key drivers**: The dataset lacks variables like property type, bathrooms, building area, condition, or rental metrics, limiting investor-grade conclusions.
 
 ---
