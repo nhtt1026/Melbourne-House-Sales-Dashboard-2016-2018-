@@ -1,8 +1,10 @@
 # Melbourne House Tableau Sales Dashboard (2016–2018): 
 
 A descriptive analytics dashboard built for a buyer’s advocacy use case, using Melbourne real estate sales data (2016–2018). The dashboard helps identify price patterns, location premiums, buyer demand segments, and potential “value opportunity” zones for real estate investors.
+  
+[View on Tableau Public](https://public.tableau.com/app/profile/hoang.thanh.truc.nguyen/viz/MelbourneHouseSalesDashboard2016-2018/Dashboard1)
 
-<img width="2698" height="1566" alt="image" src="https://github.com/user-attachments/assets/0b090fa9-aff5-433f-ac5e-6314d871a1b0" />
+<img width="3414" height="1642" alt="image" src="https://github.com/user-attachments/assets/062d33c6-8f79-4f79-ae50-114ba2f57eae" />
 
 ---
 
@@ -10,8 +12,8 @@ A descriptive analytics dashboard built for a buyer’s advocacy use case, using
 
 Dataset source: [Melbourne Housing Market (Kaggle)](https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market)
 
-Dataset fields (metadata):
-- Suburb, RegionName, Price (AUD), Date sold, Rooms (bedrooms), Distance (km to CBD), Postcode, LandSize (sqm), MarketValueIndex
+Dataset fields:
+- Suburb, RegionName, Price (AUD - $000s), Date sold, Rooms (bedrooms), Distance (km to CBD), Postcode, LandSize (sqm), MarketValueIndex
 
 ---
 
