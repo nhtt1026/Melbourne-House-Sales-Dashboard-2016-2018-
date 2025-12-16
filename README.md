@@ -17,120 +17,80 @@ Dataset fields:
 
 ---
 
-## Business Questions (Buyer Advocacy + Investor Lens)
+## Business Questions (Buyer Advocacy + Investor Lens):
 1. How did average sale prices move across 2016–2018 (trend + seasonality)?
 2. Where are price premiums concentrated (Region/Suburb)?
 3. What property profiles dominate sales volume (Rooms, Land Size)?
 4. Which Region × Rooms combinations show stronger “value opportunity” signals vs price?
+   
+---
+
+## Dashboard Components:
+
+### 1) Average Sales Price (Monthly Trend):
+
+<img width="1778" height="1047" alt="image" src="https://github.com/user-attachments/assets/7aaf5d68-1066-419b-b1b6-d0350e1f0149" />
+
+**Insights:**
+- **Trend (2016–2018)**: Prices rise steadily through 2016 into early 2017, then soften and largely stabilise from mid-2017 through early 2018, indicating a shift from growth to a more moderated market.
+- **Seasonality & Volatility**:
+  - Peaks cluster around early–mid 2017, with a noticeable dip in mid-2017. There were major policy and credit events around mid-2017 that linked to softer conditions in both Melbourne and Sydney, especially tighter mortgage lending and policy changes affecting demand.
+  - After the sharp dip, the market rapidly mean-reverted back into the ~$1.2–$1.3M band, suggesting the dip was likely a short-lived shock or sales-mix effect rather than a sustained downturn.
 
 ---
 
-## Tools
-- Tableau (Dashboard build and publishing)
-- Excel (data sanity checks / optional supplementary stats)
-- GitHub (project documentation and reproducibility)
+### 2) Region / Suburb Price Map:
+
+<img width="2528" height="1562" alt="image" src="https://github.com/user-attachments/assets/26ba9a69-d633-47d6-8416-2414a6638226" />
+
+**Insights:**
+- **Premium clusters**: The strongest premium cluster is concentrated in the **Southern Metropolitan inner-city** (e.g., postcode 3142 showing ~$3563k average), with adjacent inner-metro areas around the CBD also trending higher.
+- **Affordable zones**: The most affordable zones are predominantly to the **north-west and far south-east** (lighter yellow areas), where averages are consistently lower and the premium intensity fades as distance increases.
+  
+---
+
+### 3) Distribution of House Prices:
+
+<img width="2482" height="1538" alt="image" src="https://github.com/user-attachments/assets/cc84276b-4683-4f40-bba1-fa882a5b6a3d" />
+
+**Insights**
+- **Skewness**: The price distribution is strongly right-skewed, with most transactions clustering in the lower-to-mid price bins, and a long tail stretching into higher prices.
+- **Typical price range**:The highest transaction density sits roughly around **$600k–$1.5M**, with the mode concentrated near **$800k–$1.2M**.
+- **Outliers**: There are clear high-end outliers (i.e., low frequency but very expensive sales) that can pull the average upward, so median or averages are more representative for “typical” buyers.
 
 ---
 
-## Setup / How to View (similar to the reference repo’s “Setup/Run” sections)  [oai_citation:5‡GitHub](https://github.com/Nidheesh-Panchal/melbourne-housing)
-### Option A — View Online
-Open the Tableau Public link:
-https://public.tableau.com/views/MelbourneHouseSalesDashboard2016-2018/Dashboard1
+### 4) Distribution of Rooms:
 
-### Option B — Open Locally (Recommended for recruiters)
-1. Download `tableau/MelbourneHouseSalesDashboard_2016_2018.twbx`
-2. Open in Tableau Desktop (or Tableau Reader)
-3. If prompted, refresh the extract / reconnect data
-
----
-
-## Dashboard Walkthrough (Component-by-Component)
-This section follows the portfolio style of the reference repo: concise screenshots + what each visual answers.  [oai_citation:6‡GitHub](https://github.com/Nidheesh-Panchal/melbourne-housing)
-
-### 1) Filters Panel
-**What it does:** supports market segmentation for buyer scenarios (budget, location, property type proxy).
-- Date range (Month & Year)
-- RegionName
-- Price Range
-- Distance from CBD
-- Rooms
-- Land Size
-- Postcode (granular targeting)
-
-![Filters](assets/filters_panel.png)
-
-**Why it matters (buyer advocacy):**
-Helps tailor recommendations to different buyer profiles (first-home buyers vs family upgraders vs investors).
-
----
-
-### 2) Average Sales Price (Monthly Trend)
-**Chart:** line chart of average price over time.
-
-![Trend](assets/trend_avg_price.png)
+<img width="1516" height="1562" alt="image" src="https://github.com/user-attachments/assets/441fc0ab-d1dd-481e-925f-63132493e452" />
 
 **Key questions answered:**
-- Is the market trending up/down in 2016–2018?
-- Are there seasonal peaks/dips worth noting?
+- **Dominant number of bedrooms**: The market is overwhelmingly concentrated in **3-bedroom homes**, followed by 4-bedroom and 2-bedroom homes form a smaller but still meaningful share.
+- **Niche segments**: **1-bedroom** and **6+ bedroom properties (6, 7, 8, 10, 12 rooms)** are very low volume and should be interpreted cautiously in pricing or value comparisons, as small sample sizes can create unstable averages.
 
 ---
 
-### 3) Region / Suburb Price Map
-**Chart:** filled/area map showing relative price intensity.
+### 6) Distribution of Land Size:
 
-![Map](assets/map_region_suburb.png)
+<img width="2494" height="1280" alt="image" src="https://github.com/user-attachments/assets/4af1139b-8701-45e9-922e-7aa4fa5f3e72" />
 
-**Key questions answered:**
-- Where are premium clusters vs affordable zones?
-- How does the pattern change after filtering by Distance, Rooms, Land Size?
-
----
-
-### 4) Distribution of House Prices
-**Chart:** histogram of Price.
-
-![Price Hist](assets/hist_price.png)
-
-**Key questions answered:**
-- Is the distribution skewed? (usually right-skewed in housing)
-- Are there outliers that distort averages?
-- What does the “typical” price band look like?
+**Insights:**
+- **Typical land size**: Transactions are heavily concentrated in standard suburban block sizes, with the **highest frequency** around roughly **500–700 sqm**, and **most sales** falling broadly within **~200–900 sqm**.
+- **Long-tail**: Distribution shows a strong right tail **>1,000 sqm**, extending into multi-thousand sqm with rare extreme lots, indicating a small volume of large-site transactions that can behave differently from typical residential and should be analysed separately for development or land-banking use cases.
 
 ---
 
-### 5) Distribution of Rooms (Bedrooms)
-**Chart:** histogram of Rooms.
+### 7) Price by Region & Rooms Heatmap ($000s):
 
-![Rooms Hist](assets/hist_rooms.png)
+<img width="1602" height="432" alt="image" src="https://github.com/user-attachments/assets/bef96ab9-5c68-4b5f-9d85-78d6e4ff4c0f" />
 
-**Key questions answered:**
-- What bedroom counts dominate the market?
-- Which segments are niche (low volume) and should be treated carefully?
-
----
-
-### 6) Distribution of Land Size
-**Chart:** histogram of Land Size with a sensible bin range (e.g., 0–2000 sqm) for typical residential blocks.
-
-![Land Hist](assets/hist_landsize.png)
-
-**Key questions answered:**
-- What is the “typical” lot size band in this dataset?
-- How large is the long-tail (development/land-banking style lots)?
+**Insights:**
+- **Premium zones for larger homes**: **Southern Metropolitan** is the clear premium market for larger homes, with 5–6 room homes reaching the **highest averages** (e.g., ~$2.6M for 5 rooms and ~$3.1M for 6 rooms). **Western Metropolitan** and **Eastern Metropolitan** also show higher pricing as the number of rooms increases, but at a lower tier than Southern Metro.
+- **Strongest price jump per additional room**: In **Southern Metropolitan**, price jumps sharply when moving from 4 → 5 → 6 rooms. Smaller step-ups also appear in **Western Metropolitan** (especially 4 → 5 rooms) and **Eastern Metropolitan** (from 4 → 6 rooms), with smaller steep increases compared to Southern Metro.
 
 ---
 
-### 7) Heatmap — Price by Region & Rooms
-**Chart:** Region (rows) × Rooms (columns), colored by Avg Price.
-
-![Price Heatmap](assets/heatmap_price.png)
-
-**Investor use:**
-Shows where larger homes command a premium, and where incremental rooms increase price significantly.
-
----
-
-### 8) Heatmap — Value Opportunity Score (Region × Rooms)
+### 8) Value Opportunity Score (Region × Rooms)
 **Chart:** Region × Rooms, colored by Value Opportunity Score.
 (Define clearly how Value Score is computed; e.g., a scaled ratio using MarketValueIndex relative to Price.)
 
