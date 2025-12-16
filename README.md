@@ -95,7 +95,10 @@ Dataset fields:
 <img width="1626" height="424" alt="image" src="https://github.com/user-attachments/assets/b8f3eeb9-5b5c-439d-8cd7-55a781a2b610" />
 
 **Insights:**
--
+- This heatmap is a relative screening view—higher scores mean the Region × Rooms segment looks “better value”.
+- **Stronger value-opportunity signals (Higher scores)**: The highest scores cluster in **Eastern Victoria (3–5 rooms ~69–70), Northern Metropolitan (8–10 rooms ~70), Western Metropolitan (8 rooms ~70), and Western Victoria (2–5 rooms ~70)**, suggesting these combinations stand out as comparatively better “value” within their segments.
+- **Where to focus due diligence:** Investors can start with high-score segments that also match **mainstream demand** (typically 3–4 rooms), especially **Eastern Victoria (3–4 rooms)** and **Western Victoria (2–4 rooms)**. Then validate at postcode or suburb level with sales volume, listing mix, and local rental demand.
+- Treat 8–12 room cells as niche and check sales volume before drawing conclusions.
 
 ---
 
