@@ -72,7 +72,7 @@ Dataset fields:
 
 ### 6) Distribution of Land Size:
 
-<img width="2494" height="1280" alt="image" src="https://github.com/user-attachments/assets/4af1139b-8701-45e9-922e-7aa4fa5f3e72" />
+<img width="2050" height="1334" alt="image" src="https://github.com/user-attachments/assets/cb961f64-3343-40eb-a84a-c9a6fcde7213" />
 
 **Insights:**
 - **Typical land size**: Transactions are heavily concentrated in standard suburban block sizes, with the **highest frequency** around roughly **500–700 sqm**, and **most sales** falling broadly within **~200–900 sqm**.
@@ -90,14 +90,12 @@ Dataset fields:
 
 ---
 
-### 8) Value Opportunity Score (Region × Rooms)
-**Chart:** Region × Rooms, colored by Value Opportunity Score.
-(Define clearly how Value Score is computed; e.g., a scaled ratio using MarketValueIndex relative to Price.)
+### 8) Value Opportunity Heatmap:
 
-![Value Heatmap](assets/heatmap_value_score.png)
+<img width="1626" height="424" alt="image" src="https://github.com/user-attachments/assets/b8f3eeb9-5b5c-439d-8cd7-55a781a2b610" />
 
-**Investor use:**
-Highlights segments that may be “better value” relative to benchmark signals (MarketValueIndex), not simply the most expensive.
+**Insights:**
+-
 
 ---
 
